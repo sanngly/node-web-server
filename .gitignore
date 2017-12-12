@@ -1,0 +1,5 @@
+node_modules/
+server.log
+out.txt
+out
+package-lock.json
