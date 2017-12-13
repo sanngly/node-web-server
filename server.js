@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
 	res.render('home.hbs', {
 		pageTitle: 'Home Page',
 		heading: 'Welcome To HBS',
-		message: 'Welcome to my Web Site',
+		message: 'I am learning hbs for my Web Site development',
 	});
 });
 
@@ -57,6 +57,13 @@ app.get('/about', (req, res) => {
 	res.render('about.hbs', {
 		pageTitle: 'About Page Title',
 		heading: 'Welcome To HBS',
+	});
+});
+
+app.get('/projects', (req, res) => {
+	res.render('project.hbs', {
+		pageTitle: 'Project Page',
+		heading: 'Welcome To List of Projects',
 	});
 });
 
