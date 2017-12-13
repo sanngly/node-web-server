@@ -22,15 +22,15 @@ app.use((req, res, next)=> {
 	console.log(log);
 	fs.appendFile('server.log', log + '\n', (err) => {
 		if (err) {
-			console.log('Unable to append file.');		
+			console.log('Unable to append file.');
 		}
 	})
 	next();
 });
 
 app.use((req, res, next)=> {
-	res.render('maintanance.hbs');
-	//next();
+	// res.render('maintanance.hbs');
+	next();
 });
 
 app.use(express.static(__dirname + '/public'));
