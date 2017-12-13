@@ -66,6 +66,6 @@ app.get('/bad', (req, res) => {
 	});
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log('node-web-server app listening on port 3000 !');
 });
